@@ -5,7 +5,7 @@ function createNavBar(page){
             `
             <ul class="horizontal main-nav-list">
                 <li class="nav-tab ${page === "home" ? "selected-tab": ""}">
-                    <a href="home.html" tab_index = "0" class="nav-link"> 
+                    <a href="index.html" tab_index = "0" class="nav-link"> 
                         Home
                     </a>
                 </li> 

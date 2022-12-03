@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Emily's Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="emily.css"/>
+        <script src="main.js"></script>
+    </head>
+    <body> 
+        <nav id="navbar" class="navbar" role="navigation" aria-label="Main">
+            <script>
+                createNavBar("contact");
+            </script>
+        </nav>
+        <div class="screen-container" id="contact-screen">
+            <div class="heading-text">Emily Kohlberg</div>
+            <div class="heading-text">emilykohlberg@u.northwestern.edu</div>
+            <div class="heading-text">(630) 853-3543</div>
+
+            <div>Leave me a comment</div>
+
+            <form class="email-comment-form">
+                <span class="email-form-component text-field">
+                    <label id="nameLabel" for="name">Name:</label>
+                    <input type="text" name="name" id="name" aria-labelledby="nameLabel" required aria-required="true">
+                </span>
+
+                <span class="email-form-component text-field">
+                    <label id="emailLabel" for="email">Email:</label>
+                    <input type="email" name="email" id="email" aria-labelledby="emailLabel"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required aria-required="true">
+                </span>
+
+    
+                <fieldset class="email-form-component" role="radiogroup">
+                    <legend>Did you like the portfolio?</legend>
+                    <div>
+                        <input aria-labelledby="yesLabel" type="radio" name="like-portfolio" id="yes" value="yes" checked>
+                        <label id="yesLabel" for="yes">Yes</label>
+                    </div>
+                    <div>
+                        <input aria-labelledby="aLittleLabel" type="radio" name="like-portfolio" id="a-little" value="a-little">
+                        <label id="aLittleLabel" for="a-little">A Little</label>
+                    </div>
+                    <div>
+                        <input aria-labelledby="noLabel" type="radio" name="like-portfolio" id="no" value="no">
+                        <label id="noLabel" for="no">No</label>
+                    </div>
+                </fieldset>
+                
+                <span class="email-form-component comment-field">
+                    <label for="comment" id="commentLabel">Comments? </label>
+                    <input type="text" name="comment" id="comment" rows="12" aria-labelledby="commentLabel" aria-required="false">
+                </span>
+                
+                <fieldset class="email-form-component">
+                    <legend>Did you want me to email you a fun surprise?</legend>
+                    <div>
+                        <input aria-labelledby="yesSurpriseLabel" type="radio" name="surprise" id="yesSurprise" value="yes" checked>
+                        <label id="yesSurpriseLabel" for="yesSurprise">Yes</label>
+                    </div>
+                    <div>
+                        <input aria-labelledby="noLabelSurprise" type="radio" name="surprise" id="noSurprise" value="no">
+                        <label id="noSurpriseLabel" for="noSurprise">No</label>
+                    </div>
+                </fieldset>
+                <button type="submit">Submit</button>
+            </form>
+            
+        </div>
+
+   </body>
+   
+</html>
